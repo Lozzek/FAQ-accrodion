@@ -1,0 +1,142 @@
+@font-face {
+    font-family: WorkSans-italic;
+    src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+* {
+    margin: 0;
+}
+  
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-color: #F8EEFF;
+    background-size: 375px 232px;
+    background-repeat: no-repeat;
+
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+#root, #__next {
+    isolation: isolate;
+}
+
+
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-gap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus:hover {
+    cursor: pointer;
+}
+
+.minus {
+    display: none;
+}
+
+.minus.active {
+    display: block;
+}
+
+.minus:hover {
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 600px;
+    max-height: 900px; 
+
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 2rem 1.4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.title {
+    font-family: 'WorkSans';
+}
+
+.question {
+    font-size: 1rem;
+    font-family: 'WorkSans';
+    font-weight: 600;
+    line-height: auto;
+}
+
+.question:hover {
+    cursor: pointer;
+    color: #AD28EB;
+}
+
+.answer {
+    color: #8B6990;
+    font-size: .875rem;
+    font-family: 'WorkSans';
+    line-height: 150%;
+
+    display: none;
+}
+
+.answer.active {
+    display: block;
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-size: 1440px 320px;
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-size: 1440px 320px;
+        
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+    body {
+        background-size: 3440px 765px;
+    }
+}
